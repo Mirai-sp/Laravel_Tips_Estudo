@@ -16,11 +16,18 @@ mix.js('resources/js/app.js', 'public/js')
         //
     ]);
 
+// Se for usar o exemplo abaixo, nao precisa da linha acima
+
 // neste exemplo estaria unificando dois arquivos que estariam dentro de resources/views/css (reset.css e style.css) e unificando em um unico arquivo dentro da public/site/css
 // mix.styles([
 //         'resources/views/site/css/reset.css',
 //         'resources/vies/site/css/style.css'
-//     ], 'public/site/css/style.css').version();
+//     ], 'public/site/css/style.css')
+//  .scripts([
+//      'resources/views/site/js/scripts.js',
+//      'resources/vies/site/js/scripts.js'
+// ], 'public/site/js/scripts.js')
+// .version();
 
 // para rodar as modificacoes ou seja compilar este webpack, o production ele mimifica o conteudo
 //npm run dev
