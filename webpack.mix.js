@@ -15,3 +15,9 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+// neste exemplo estaria unificando dois arquivos que estariam dentro de resources/views/css (reset.css e style.css) e unificando em um unico arquivo dentro da public/site/css
+// mix.styles([
+//         'resources/views/site/css/reset.css',
+//         'resources/vies/site/css/style.css'
+//     ], 'public/site/css/style.css');
