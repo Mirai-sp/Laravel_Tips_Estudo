@@ -32,6 +32,7 @@ mix.js('resources/js/app.js', 'public/js')
 // para rodar as modificacoes ou seja compilar este webpack, o production ele mimifica o conteudo
 //npm run dev
 //npm run production
+// npm run watch -- usar somente no desenvolvimento, pois assim ele ficara escutando qualquer modificacao de recurso e ja pre processa as alteracoes automaticamente
 
 // vou colocado acima o .version para evitar erro de cache, ou seja a cada compilaçao sera mudado o final do nome do arquivo, consequentemente o import do asset tbm deve ser importado
 // com a tag correspondente, portanto usar o metodo mix ao invez de somente assets, ex:]
