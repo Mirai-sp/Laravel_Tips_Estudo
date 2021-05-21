@@ -20,4 +20,12 @@ mix.js('resources/js/app.js', 'public/js')
 // mix.styles([
 //         'resources/views/site/css/reset.css',
 //         'resources/vies/site/css/style.css'
-//     ], 'public/site/css/style.css');
+//     ], 'public/site/css/style.css').version();
+
+// para rodar as modificacoes ou seja compilar este webpack, o production ele mimifica o conteudo
+//npm run dev
+//npm run production
+
+// vou colocado acima o .version para evitar erro de cache, ou seja a cada compilaçao sera mudado o final do nome do arquivo, consequentemente o import do asset tbm deve ser importado
+// com a tag correspondente, portanto usar o metodo mix ao invez de somente assets, ex:]
+// <link rel="stylesheet" href="{{ url(mix('/site/css/style.css)) }}"
